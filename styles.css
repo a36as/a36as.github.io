@@ -16,7 +16,7 @@ body {
 
 /* Container for the posts */
 .container {
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
   padding: 20px;
 }
@@ -27,67 +27,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Post title */
 .post h2 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-/* Post preview content */
-.preview {
+.post p {
   font-size: 1.1rem;
   line-height: 1.6;
-}
-
-/* Full content (hidden initially) */
-.full-content {
-  display: none;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-top: 10px;
-}
-
-/* Checkbox (to handle the show/hide) */
-.toggle-checkbox {
-  display: none;
-}
-
-.toggle-checkbox:checked + .toggle-label + .preview + .full-content {
-  display: block;
-}
-
-/* Toggle label (button) styles */
-.toggle-label {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 5px 10px;
-  border: 1px solid #333;
-  background-color: transparent;
-  color: #333;
-  cursor: pointer;
-}
-
-.toggle-label:hover {
-  background-color: #f4f4f4;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .post h2 {
-    font-size: 1.5rem;
-  }
-
-  .post p {
-    font-size: 1rem;
-  }
-
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .toggle-label {
-    width: 100%;
-    text-align: center;
-  }
 }
