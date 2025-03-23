@@ -9,33 +9,9 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  padding-bottom: 60px; /* 留出空间给固定的footer */
-}
-
-/* Header styles */
-header {
-  background: linear-gradient(135deg, #6e7dff, #9d58c5); /* 渐变背景 */
-  color: white;
-  padding: 40px 0;
-  text-align: center;
-  border-bottom: 5px solid #fff;
-}
-
-header .header-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 20px;
 }
 
 /* Container for the posts */
@@ -43,40 +19,20 @@ header p {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 /* Post styles */
 .post {
-  background-color: #fafafa;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .post h2 {
   font-size: 2rem;
-  color: #333;
   margin-bottom: 10px;
 }
 
 .post p {
   font-size: 1.1rem;
-  color: #555;
   line-height: 1.6;
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
 }
