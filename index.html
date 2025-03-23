@@ -1,26 +1,98 @@
 <!DOCTYPE html>
-<html lang="zh">
+<!--
+88888888ba               88                        88  88b           d88               88              
+88      "8b              88                        88  888b         d888               88              
+88      ,8P              88                        88  88`8b       d8'88               88              
+88aaaaaa8P'  ,adPPYYba,  88,dPPYba,   88       88  88  88 `8b     d8' 88  88       88  88  ,adPPYYba,  
+88""""88'    ""     `Y8  88P'    "8a  88       88  88  88  `8b   d8'  88  88       88  88  ""     `Y8  
+88    `8b    ,adPPPPP88  88       88  88       88  88  88   `8b d8'   88  88       88  88  ,adPPPPP88  
+88     `8b   88,    ,88  88       88  "8a,   ,a88  88  88    `888'    88  "8a,   ,a88  88  88,    ,88  
+88      `8b  `"8bbdP"Y8  88       88   `"YbbdP'Y8  88  88     `8'     88   `"YbbdP'Y8  88  `"8bbdP"Y8
+-->
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的博客</title>
-  <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<title>Rahul Mula</title>
+	<link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+	<main>
+		<div class="title">
+			<div data-scroll="out" style="transition-duration: 300ms;">R</div>
+			<div data-scroll="out" style="transition-duration: 450ms;">a</div>
+			<div data-scroll="out" style="transition-duration: 600ms;">h</div>
+			<div data-scroll="out" style="transition-duration: 750ms;">u</div>
+			<div data-scroll="out" style="transition-duration: 900ms;">l</div>
+			<div data-scroll="out" style="width: .51ch;"></div>
+			<div data-scroll="out" style="transition-duration: 1050ms;">M</div>
+			<div data-scroll="out" style="transition-duration: 1200ms;">u</div>
+			<div data-scroll="out" style="transition-duration: 1350ms;">l</div>
+			<div data-scroll="out" style="transition-duration: 1500ms;">a</div>
+		</div>
+		
+		<div class="container">
+			<div class="card" data-scroll="out">
+				<div class="visual">
+					<img src="static/picture/python-book.png" alt="book-cover">
+				</div>
+				<div class="content">
+					<h2>Python 3.10 Book</h2>
+					<p>A complete guide book for beginners, covering essentials to advanced topics. Available as ebook and paperback on Amazon.</p>
 
-  <div class="container">
-    <div class="post">
-      <h2>第一篇文章</h2>
-      <p>这是我的第一篇博客文章！我会分享我的一些心得和经验，探索新技术，和大家一起成长。</p>
-    </div>
-    
-    <div class="post">
-      <h2>第二篇文章</h2>
-      <p>这是我的第二篇博客文章，继续记录我的生活点滴，分享我的思考与感悟。</p>
-    </div>
+					<a href="https://www.amazon.com/dp/B09NWGK1F5">
+						<img src="static/picture/arrow-right.svg" alt="arrow">
+					</a>
+				</div>
+			</div>
+			
+			<div class="card" data-scroll="out">
+				<div class="visual">
+					<img src="static/picture/instructor.png" alt="">
+				</div>
+				<div class="content">
+					<h2>Instructor</h2>
+					<p>Long form and in-depth courses on python programming, web scraping using scrapy, and css & xpath selectors.</p>
 
-    <!-- 更多文章 -->
-  </div>
+					<a href="https://www.udemy.com/user/rahul-mula-3/">
+						<img src="static/picture/arrow-right.svg" alt="arrow">
+					</a>
+				</div>
+			</div>
+			
+			<div class="card" data-scroll="out">
+				<div class="visual">
+					<img src="static/picture/keyviz.png" alt="keyviz-usage" style="object-position: 0;">
+				</div>
+				<div class="content">
+					<h2>Keyviz</h2>
+					<p>An opensource tool to visualize your keypress in realtime. Source code along with executables can be found at Github.</p>
 
+					<a href="keyviz/">
+						<img src="static/picture/arrow-right.svg" alt="arrow">
+					</a>
+				</div>
+			</div>
+			
+			<div class="card" data-scroll="out">
+				<div class="visual">
+					<img src="static/picture/refresh.png" alt="refresh-banner" style="object-position: 0;">
+				</div>
+				<div class="content">
+					<h2>Refresh</h2>
+					<p>Tap your refresh button! Get alerts to follow the 20-20-20 rule and keep your eyes in good shape.</p>
+
+					<a href="https://play.google.com/store/apps/details?id=dev.rahulmula.refresh">
+						<img src="static/picture/arrow-right.svg" alt="arrow">
+					</a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="static/js/scroll-out.min.js"></script>
+	<script>ScrollOut();</script>
 </body>
 </html>
