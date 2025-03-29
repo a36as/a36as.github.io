@@ -3,163 +3,112 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: "Helvetica Neue", "Noto Sans SC", sans-serif;
 }
 
 body {
-    background-color: #f5f7fa; /* 背景色，模仿图片中的浅灰色 */
+    background: #18181B;
+    color: #E4E4E7;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
-
-/* 头部样式 */
-.header {
-    padding: 20px;
-    text-align: left;
-}
-
-.logo {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* 搜索栏样式 */
-.search-bar {
-    display: flex;
     align-items: center;
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.search-icon {
-    width: 16px; /* 限制搜索图标大小 */
-    height: 16px;
-    margin-right: 10px;
-}
-
-.search-bar input {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    width: 100%;
-}
-
-/* 导航菜单样式 */
-.nav-menu {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-}
-
-.nav-menu ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.nav-menu li {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #666;
-    cursor: pointer;
-}
-
-.nav-menu li.active {
-    color: #333;
-    font-weight: bold;
-    border-bottom: 2px solid #333;
-}
-
-/* 资源卡片网格样式 */
-.resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.resource-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
+    justify-content: center;
+    min-height: 100vh;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
 }
 
-.resource-card:hover {
-    transform: translateY(-5px);
+/* 头部 */
+header {
+    margin-top: 20px;
 }
 
-.card-icon {
-    width: 30px; /* 限制卡片图标大小 */
-    height: 30px;
-    display: block; /* 确保图标居中 */
-    margin: 0 auto 10px; /* 居中并与下方内容保持间距 */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-.resource-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.resource-card p {
-    font-size: 14px;
-    color: #999;
-}
-
-/* 侧边栏样式 */
-.sidebar {
-    position: fixed;
-    right: 20px;
-    top: 100px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar ul {
-    list-style: none;
+.subtitle {
+    font-size: 1rem;
+    color: #A1A1AA;
     margin-bottom: 20px;
 }
 
-.sidebar li {
-    padding: 10px 0;
-    font-size: 16px;
-    color: #666;
-    cursor: pointer;
-}
-
-.sidebar li:hover {
-    color: #333;
-}
-
-.feedback-btn {
+/* 导航 */
+nav ul {
     display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #666;
-    cursor: pointer;
+    list-style: none;
+    gap: 20px;
+    padding: 10px 0;
 }
 
-.comment-icon {
-    width: 16px; /* 限制评论图标大小 */
-    height: 16px;
-    margin-right: 5px;
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #27272A;
+}
+
+/* 主体 */
+.hero {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #A1A1AA;
+}
+
+/* 信息卡片 */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.card {
+    background: #27272A;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #A1A1AA;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 页脚 */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #A1A1AA;
+    padding: 10px 0;
 }
