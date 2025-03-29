@@ -1,0 +1,165 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa; /* 背景色，模仿图片中的浅灰色 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 头部样式 */
+.header {
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 搜索栏样式 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    width: 16px; /* 限制搜索图标大小 */
+    height: 16px;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* 导航菜单样式 */
+.nav-menu {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-menu li {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.nav-menu li.active {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+/* 资源卡片网格样式 */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.resource-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 30px; /* 限制卡片图标大小 */
+    height: 30px;
+    display: block; /* 确保图标居中 */
+    margin: 0 auto 10px; /* 居中并与下方内容保持间距 */
+}
+
+.resource-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resource-card p {
+    font-size: 14px;
+    color: #999;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: #333;
+}
+
+.feedback-btn {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.comment-icon {
+    width: 16px; /* 限制评论图标大小 */
+    height: 16px;
+    margin-right: 5px;
+}
