@@ -1,147 +1,52 @@
+
 <!DOCTYPE html>
-<!--
-88888888ba               88                        88  88b           d88               88              
-88      "8b              88                        88  888b         d888               88              
-88      ,8P              88                        88  88`8b       d8'88               88              
-88aaaaaa8P'  ,adPPYYba,  88,dPPYba,   88       88  88  88 `8b     d8' 88  88       88  88  ,adPPYYba,  
-88""""88'    ""     `Y8  88P'    "8a  88       88  88  88  `8b   d8'  88  88       88  88  ""     `Y8  
-88    `8b    ,adPPPPP88  88       88  88       88  88  88   `8b d8'   88  88       88  88  ,adPPPPP88  
-88     `8b   88,    ,88  88       88  "8a,   ,a88  88  88    `888'    88  "8a,   ,a88  88  88,    ,88  
-88      `8b  `"8bbdP"Y8  88       88   `"YbbdP'Y8  88  88     `8'     88   `"YbbdP'Y8  88  `"8bbdP"Y8
-原作者：Rahul Mula 保留版权注释部分
--->
-<html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-	<title>Games</title>
-	<link rel="stylesheet" href="static/css/style.css">
-</head>
-<body>
-	<main>
-		<div class="title">
-			<div data-scroll="out" style="transition-duration: 300ms;">G</div>
-			<div data-scroll="out" style="transition-duration: 450ms;">a</div>
-			<div data-scroll="out" style="transition-duration: 600ms;">m</div>
-			<div data-scroll="out" style="transition-duration: 750ms;">e</div>
-			<div data-scroll="out" style="transition-duration: 900ms;">s</div>
-		</div>
-		
-		<div class="container">
-			<div class="card" data-scroll="out">
-				<div class="visual">
-					<img src="static/picture/soldswf.com.png" alt="book-cover">
-				</div>
-				<div class="content">
-					<h2>Oldswf</h2>
-					<p>流畅玩 241,844 个 Flash 游戏。</p>
+<html>
+  <head>
+    <title>MarkMark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="https://storage.googleapis.com/markmark-media/markmark/favicon.ico">
+    <link rel="mask-icon" href="https://storage.googleapis.com/markmark-media/markmark/website_icon.svg" color="black">
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        font-size: 36px;
+      }
 
-					<a href="https://oldswf.com/" target="_blank" rel="noopener noreferrer">
-						<img src="static/picture/arrow-right.svg" alt="arrow">
-					</a>
-				</div>
-			</div>
-			
-			<div class="card" data-scroll="out">
-				<div class="visual">
-					<img src="static/picture/Emu666.png" alt="">
-				</div>
-				<div class="content">
-					<h2>Emu666</h2>
-					<p>流畅玩各种经典模拟游戏，需要注意的是登录后才可玩游戏。</p>
+      .footer {
+        text-align: center;
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        font-size: 14px;
+        background-color: transparent;
+        padding: 10px;
+        color: #ccc;
+      }
 
-					<a href="https://www.emu666.com/" target="_blank" rel="noopener noreferrer">
-						<img src="static/picture/arrow-right.svg" alt="arrow">
-					</a>
-				</div>
-			</div>
-			
-			<div class="card" data-scroll="out">
-				<div class="visual">
-					<img src="static/picture/Find-the-Invisible-Cow.png" alt="keyviz-usage" style="object-position: 0;">
-				</div>
-				<div class="content">
-					<h2>找到隐藏的牛</h2>
-					<p>游戏方法简单且上头，根据声音的大小来找到牛，不适合手机玩，推荐电脑或平板。</p>
+      .footer a {
+        color: #fff;
+        text-decoration: none;
+      }
 
-					<a href="https://findtheinvisiblecow.com/" target="_blank" rel="noopener noreferrer">
-						<img src="static/picture/arrow-right.svg" alt="arrow">
-					</a>
-				</div>
-			</div>
-			
-			<div class="card" data-scroll="out">
-				<div class="visual">
-					<img src="static/picture/sdlMS.png" alt="refresh-banner" style="object-position: 0;">
-				</div>
-				<div class="content">
-					<h2>冒险岛</h2>
-					<p>复刻一款经典游戏冒险岛，首次加载时间稍长，不适合手机玩，推荐电脑或平板。</p>
-
-					<a href="https://pshocker.github.io/sdlMS_online/sdlMS.html" target="_blank" rel="noopener noreferrer">
-                                 <img src="static/picture/arrow-right.svg" alt="arrow">
-                                 </a>
-
-				</div>
-			</div>
-
-
-			
-
-                    <div class="card" data-scroll="out">
-				<div class="visual">
-					<img src="static/picture/夏日午后游戏.png" alt="refresh-banner" style="object-position: 0;">
-				</div>
-				<div class="content">
-					<h2>夏日午后</h2>
-					<p>3D 漫画风游戏，游戏简单，首次加载可能卡顿。</p>
-
-					<a href="https://summer-afternoon.vlucendo.com/" target="_blank" rel="noopener noreferrer">
-                                 <img src="static/picture/arrow-right.svg" alt="arrow">
-                                 </a>
-
-				</div>
-			</div>
-
-
-
-                                <div class="card" data-scroll="out">
-				<div class="visual">
-					<img src="static/picture/植物大战僵尸.png" alt="refresh-banner" style="object-position: 0;">
-				</div>
-				<div class="content">
-					<h2>植物大战僵尸</h2>
-					<p>经典游戏《植物大战僵尸》，不适合手机玩，推荐电脑或平板。</p>
-
-					<a href="https://pvz.heheda.top/" target="_blank" rel="noopener noreferrer">
-                                 <img src="static/picture/arrow-right.svg" alt="arrow">
-                                 </a>
-
-				</div>
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-			
-		</div>
-	</main>
-	<script src="static/js/scroll-out.min.js"></script>
-	<script>ScrollOut();</script>
-</body>
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h2>MarkMark</h2>
+        <a href="https://apps.apple.com/app/apple-store/id6475077023?pt=126819514&ct=official&mt=8" target="_blank">
+          <img src="static/picture/appstore-download-button.svg" alt="Download on App Store">
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      Copyright &copy; 2024 Tutu Studio.
+    </div>
+  </body>
 </html>
