@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.logo h2 {
+  font-size: 48px;
+  font-family: 'SF Pro Rounded', ui-rounded;
+  background: linear-gradient(
+    to right,
+    #ff6b6b,
+    #ffa06a,
+    #f3ff6d,
+    #72ff6a,
+    #72ffcc,
+    #72cfff,
+    #b072ff,
+    #ff72f2
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 300% auto;
+  animation: textShine 2s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
