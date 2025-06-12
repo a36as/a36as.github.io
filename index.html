@@ -1,10 +1,117 @@
-     <!DOCTYPE html>
-     <html>
-     <head>
-         <title>我的相册</title>
-     </head>
-     <body>
-         <h1>我的相册</h1>
-         <img src="你的图片地址" alt="你的图片">
-     </body>
-     </html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>宝宝成长记录</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #444;
+    }
+
+    .timeline {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      width: 4px;
+      background: #ddd;
+      top: 0;
+      bottom: 0;
+    }
+
+    .entry {
+      margin: 2rem 0;
+      padding-left: 60px;
+      position: relative;
+    }
+
+    .entry::before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: #4a90e2;
+      border-radius: 50%;
+      position: absolute;
+      left: 12px;
+      top: 0.5rem;
+    }
+
+    .entry h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.25rem;
+      color: #222;
+    }
+
+    .entry p {
+      margin: 0 0 1rem;
+      color: #666;
+    }
+
+    .entry img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      .entry {
+        padding-left: 40px;
+      }
+      .timeline::before {
+        left: 10px;
+      }
+      .entry::before {
+        left: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>宝宝成长时间线</h1>
+</header>
+
+<main class="timeline">
+
+  <div class="entry">
+    <h2>2024年3月1日 · 出生啦！</h2>
+    <p>我们的小宝贝诞生了，人生的奇迹从这一刻开始。</p>
+    <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/images/20240301.jpg" alt="出生照片">
+  </div>
+
+  <div class="entry">
+    <h2>2024年6月1日 · 百日快乐</h2>
+    <p>百天啦，第一次对爸爸笑，一起留下最初的记忆！</p>
+    <img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/images/20240601.jpg" alt="百日照">
+  </div>
+
+  <!-- 可继续添加更多 entry -->
+  
+</main>
+
+</body>
+</html>
